@@ -1,0 +1,41 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: staging
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/jupyter/nbgrader:
+      branch: ''
+      repo: https://github.com/jupyter/nbgrader
+environment:
+  JPL_KEEPGOING: true
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/jupyter/nbgrader:
+        commands:
+        - /usr/bin/env sh .sqa/script.breezy-platinum-budgerigar.sh
+        container: qc.acc_shaky-tan-javanese
+  QC.Doc:
+    repos:
+      github.com/jupyter/nbgrader:
+        commands:
+        - /usr/bin/env sh .sqa/script.fuzzy-beige-gecko.sh
+        container: qc.doc_chummy-lavender-ocelot
+      github.com/jupyter/nbgrader__2:
+        commands:
+        - /usr/bin/env sh .sqa/script.chewy-mustard-maltese.sh
+        container: qc.doc_stuffy-lime-worm
+  QC.Lic:
+    repos:
+      github.com/jupyter/nbgrader:
+        commands:
+        - /usr/bin/env sh .sqa/script.messy-tangerine-tzu.sh
+        container: qc.lic_silly-pink-wildebeest
+  QC.Met:
+    repos:
+      github.com/jupyter/nbgrader:
+        commands:
+        - /usr/bin/env sh .sqa/script.squeaky-taupe-grouse.sh
+        container: qc.met_grumpy-zucchini-squirt
+timeout: 600
