@@ -5,7 +5,6 @@ config:
       branch: staging
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/jupyter/nbgrader:
-      branch: ''
       repo: https://github.com/jupyter/nbgrader
 environment:
   JPL_KEEPGOING: true
@@ -14,28 +13,28 @@ sqa_criteria:
     repos:
       github.com/jupyter/nbgrader:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-platinum-budgerigar.sh
-        container: qc.acc_shaky-tan-javanese
+        - /usr/bin/env sh .sqa/script.snippy-cobalt-warthog.sh
+        container: qc.acc_cloudy-linen-bear
   QC.Doc:
     repos:
       github.com/jupyter/nbgrader:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-beige-gecko.sh
-        container: qc.doc_chummy-lavender-ocelot
+        - /usr/bin/env sh .sqa/script.cozy-amethyst-bat.sh
+        container: qc.doc_cheeky-fuchsia-cheetah
       github.com/jupyter/nbgrader__2:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-mustard-maltese.sh
-        container: qc.doc_stuffy-lime-worm
+        - /usr/bin/env sh .sqa/script.breezy-cream-guppy.sh
+        container: qc.doc_tacky-asparagus-whippet
   QC.Lic:
     repos:
       github.com/jupyter/nbgrader:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-tangerine-tzu.sh
-        container: qc.lic_silly-pink-wildebeest
+        - /usr/bin/env sh .sqa/script.snazzy-burgundy-sheepdog.sh
+        container: qc.lic_messy-champagne-angora
   QC.Met:
     repos:
       github.com/jupyter/nbgrader:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-taupe-grouse.sh
-        container: qc.met_grumpy-zucchini-squirt
+        - /usr/bin/env sh .sqa/script.sunny-cobalt-seal.sh
+        container: qc.met_leaky-malachite-monkey
 timeout: 600
