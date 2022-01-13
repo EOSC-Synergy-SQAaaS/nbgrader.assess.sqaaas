@@ -1,3 +1,3 @@
 (
-cd github.com/jupyter/nbgrader && pwd && ls -l && cat codemeta.json
+cd github.com/jupyter/nbgrader && cat codemeta.json
 )
