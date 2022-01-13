@@ -5,7 +5,6 @@ config:
       branch: staging
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/jupyter/nbgrader:
-      branch: ''
       repo: https://github.com/jupyter/nbgrader
 environment:
   JPL_KEEPGOING: true
